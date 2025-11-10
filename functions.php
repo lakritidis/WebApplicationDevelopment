@@ -12,4 +12,3 @@ function quadratic($a, $b, $x=100) {
     return $y;
 }
 ?>
-

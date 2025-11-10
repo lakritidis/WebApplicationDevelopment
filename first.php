@@ -12,6 +12,7 @@ require_once("functions.php");
 
 Web page body
 
+
 <?php
     $a = 5;
     $myvar = "Its a string";
