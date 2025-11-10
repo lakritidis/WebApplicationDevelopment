@@ -11,4 +11,6 @@ function quadratic($a, $b, $x=100) {
     $y = $a + $b * $x * $x;
     return $y;
 }
+
 ?>
+

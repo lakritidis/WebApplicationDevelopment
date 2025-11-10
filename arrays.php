@@ -11,7 +11,6 @@ require_once("functions.php");
     print_r($matrix);
     echo $matrix[5];
     $num_elements = count($matrix);
-
     for ($i = 0 ; $i < $num_elements; $i++) {
         echo $matrix[$i] . ", ";
     }
