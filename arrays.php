@@ -1,4 +1,4 @@
-<html>
+<html lang="">
 <?php
 require_once("functions.php");
 ?>
@@ -7,6 +7,7 @@ require_once("functions.php");
 </head>
 <body>
 <?php
+
     $matrix = array(1950, 1960, 1970, 1980, 1990, 2000, "a string", 450, 45);
     print_r($matrix);
     echo $matrix[5];
