@@ -1,4 +1,6 @@
 <?php
+require_once('car.php');
+
 function names($a, $b) { return strcmp($a, $b); }
 function names_rev($a, $b) {  return strcmp($b, $a); }
 

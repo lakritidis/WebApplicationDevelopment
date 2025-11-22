@@ -1,5 +1,16 @@
 <?php
+require_once("car.php");
 require_once("functions.php");
+
+ini_set("max_execution_time", 1200);
+ini_set("memory_limit", "4G");
+
+$mercedes = new car("Mercedes", "C-Class 180", "2020");
+$bmw = new car("BMW");
+$mclaren = new super_car("v8", "black", 400);
+
+$mercedes->setBrand("Mercedes-Benz");
+$mclaren->setBrand("McLaren");
 ?>
 <html>
 <head>
@@ -52,5 +63,9 @@ Web page body
         </tr>
 <?php } ?>
     </table>
+
+<?php
+    echo $mercedes->getBrand();
+?>
 </body>
 </html>

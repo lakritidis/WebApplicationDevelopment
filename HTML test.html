@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Validation</title>
+<style>
+div {
+	margin-left: 2px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: -5px;
+	color: blue;
+	font-family: tahoma;
+	color: blue;
+}
+
+.help {
+	display: none;
+	font-size: 90%;
+}
+
+input:focus+.help {
+	display: inline-block;
+}
+
+input:required {
+	background: hsl(180, 50%, 90%);
+	border: 1px solid #999;
+}
+
+input:valid,input:in-range {
+	background: hsl(120, 50%, 90%);
+	border-color: hsl(120, 50%, 50%);
+}
+
+input:invalid,input:out-of-range {
+	border-color: hsl(0, 50%, 50%);
+	background: hsl(0, 50%, 90%);
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}​
+</style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<form action="process_form.php" method="get">
+		<fieldset>
+			<legend>Sign up</legend>
+				Name:
+				<input type="text" autofocus id="personsname" name="personsname" value="" placeholder="" required>*<br><br>
+				
+				Email:
+				<input type="email" id="personsemail" name="personsemail" value="" required placeholder="">*<br><br>
+
+				Website:
+				<input type="url" id="personswebsite" name="personswebsite" value="" placeholder="like https://www.ihu.edu.gr"><br><br>
+				
+				Age:
+				<input type="number" id="personsage" name="personsage" value="" required min="18" max="75" oninput="ch1()">*<br> 
+				<input type="range"  min="18" max="75" value="0"  id="personsslider" name="personsslider" oninput="ch2()"><br><br>
+				
+				
+				<abbr title="Date of Birth">D.O.B.:</abbr> 								
+				<input type="date" id="personsdate" name="personsdate"><br><br>
+				
+				Picture:					
+				<input type="file" id="personsfile" name="personsfile"><br><br>
+
+			
+
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+		</fieldset>
+	</form>
+	<script>
+	
+	
+	</script>
+</body>
+</html>
