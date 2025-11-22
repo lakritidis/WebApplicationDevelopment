@@ -11,6 +11,7 @@ if (isset($_GET['fname'])) {
     $a_param = "";
 }
 
+
 if (isset($_GET['lname'])) {
     $b_param = sanitize_2($_GET['lname']);
 } else {

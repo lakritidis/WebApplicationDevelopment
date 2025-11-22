@@ -6,6 +6,7 @@ class car {
     protected $doors;
     protected $type;
 
+
     public function __construct($brand="", $model="", $year="", $doors="", $type="") {
         $this->brand = $brand;
         $this->model = $model;

@@ -17,6 +17,7 @@ $str = $substr = mb_substr($a, 100, 4, "UTF-8");
 echo '<br>';
 echo $str;
 
+
 echo '<br>';
 echo "Trimmed version: " . trim($b);
 
